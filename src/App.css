@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+/* GENERALE */
+
+body {
+  background: linear-gradient(90deg, rgb(63, 86, 119) 0%, rgba(33, 44, 61, 1) 42%, rgb(15, 21, 29) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* LEFTBAR */
+
+#logo-LeftBar {
+  width: 6.5rem;
+  margin-left: 0.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar.fixed-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav a {
+  color: rgb(145, 145, 145) !important;
+  transition: 0.1s;
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav a:hover {
+  color: white !important;
+  text-decoration: underline;
+}
+
+/* RIGHTBAR */
+
+#RightNavBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+}
+
+.bg-container {
+  height: 5.5rem;
+  background-color: #282828;
+}
+
+.playerControls .row {
+  justify-content: space-between;
+  display: inline;
+}
+
+#playerControls {
+  width: 1.2rem;
+  filter: brightness(60%);
+  margin: 0.7rem 0.7rem;
+}
+
+#playerControls:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+/*MAINPAGE*/
+#content-MainPage p{
+  text-align: left;
+}
+
+.imgLinks a p, .mainPage p a, .LinkSearchPage a, #links-MyAlbum a{
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.mainPage p a:hover, .LinkSearchPage a:hover, #links-MyAlbum a:hover {
+  color: rgb(218, 218, 218);
+  text-decoration: underline;
+}
+
+ #ImgSearchPage:hover, .img-SingleCard:hover  {
+  filter: brightness(88%);
+}
+
+/* ALBUMPAGE */
+
+#albumPage-TracksMin {
+  display: flex;
+  justify-content: space-between;
+}
+
+#albumPage-TracksMin:hover{
+  background-color: rgba(22, 22, 22, 0.633);
+  cursor: pointer;
+}
+
+#albumPage-Tracks, #albumPage-Min {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#btnPlay {
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.album-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.artist-name {
+  color: white;
+}
+
+
+/* SEARCHPAGE */
+
+#Artist-SearchPage a, #Title-SearchPage a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#Artist-SearchPage:hover, #Title-SearchPage:hover {
+  color: rgb(218, 218, 218);
+  text-decoration: underline;
+}
+
+/* SEARCHBAR */
+
+#searchField {
+  margin-top: 1rem;
+}
+
+#button-SearchBar {
+  margin-top: 1rem;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px
+}
+
+/* MEDIASCREEN */
+
+@media screen and (max-width: 936px) {
+  #sidebar {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  #RightNavBar {
+    display: none;
   }
 }
