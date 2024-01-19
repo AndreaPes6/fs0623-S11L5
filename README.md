@@ -1,7 +1,7 @@
-installare
-npm install react-router-dom
-npm install react-bootstrap
-npm install bootstrap
-npm install react-redux
-npm install react-icons
-npm install @reduxjs/toolkit
+installare 
+-npm i react-router-dom
+-npm i react-bootstrap
+-npm i bootstrap
+-npm i react-redux
+-npm i react-icons
+-npm i @reduxjs/toolkit
